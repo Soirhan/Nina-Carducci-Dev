@@ -44,6 +44,7 @@ body {
 
 #about {
 	display: flex;
+	width: 100%;
 	background-color: #F6D2B8;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -74,6 +75,10 @@ body {
 #about-me {
 	flex: 2
 }
+#about img{
+	width: 100%;
+}
+
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
@@ -89,9 +94,13 @@ body {
 	width: 80%;
 	font-size: 14px;
 }
+.carousel-item img{
+	display: block;
+	width: 100%;
+}
 
 #gallery {
-	/*	min-height: 100vh; */
+	min-height: 100vh; 
 }
 .title{
 	text-align: center;
