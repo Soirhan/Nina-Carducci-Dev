@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+	<!-- Ajout des balises meta pour le referencement local -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Photographe à Bordeaux, Nina Carducci capture vos instants uniques : mariages, portraits, concerts, photos d’entreprise. Qualité, émotion, authenticité." />
@@ -30,7 +31,8 @@
 </head>
 <body>
 	<div class="top-header">
-		<h3 class="name">Nina Carducci</h3>
+		<!--Modif H1 AU LIEU DE H3-->
+		<h1 class="name">Nina Carducci</h1>
 		<div class="nav">   
 			<ul>
 				<li><a href="#about">À propos</a></li>
@@ -74,7 +76,8 @@
 			<img src="./assets/images/nina.webp" alt="Portrait de Nina">
 		</div>
 		<div id="about-me">
-			<h3 class="about-me__title">A propos de moi</h3>
+			<!--Modif h3 en h2-->
+			<h2 class="about-me__title">A propos de moi</h2>
 			<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
 			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.
@@ -82,9 +85,11 @@
 		</div>
 	</div>
 	<div id="gallery">
-		<h3 class="title">Portfolio</h3>
+		<!--Modif h3 en h2-->
+		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
+				<!-- Modification des alt et de la taille des images -->
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Concert avec lumière sur le chanteur" loading="lazy"/>
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Homme en costume professionnel" loading="lazy"/>
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Réunion d'affaires dans une salle de réunion" loading="lazy"/>
@@ -99,14 +104,14 @@
 		<div class="quote">
 			<figure>
 				<blockquote>
-					<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+					<h2 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h2>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		</div>
 	</div>
 	<div id="services">
-		<h3 class="title">Mes services</h3>
+		<h2 class="title">Mes services</h2>
 		<div class="container">
 			<div class="service">
 				<div class="service__description">
@@ -144,7 +149,7 @@
 	<div class="quote">
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+				<h2 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h2>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
@@ -155,11 +160,12 @@
 				<h3>Une question ? Une demande de devis ?</h3>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="" method="post">
-					<label for="name">Nom</label>
+					<!-- Modification des label nom et message -->
+					<label for="nom">Nom</label>
 					<input type="text" name="nom" id="nom">
 					<label for="email">Email</label>
 					<input type="email" name="email" id="email">
-					<label for="textarea">Message</label>
+					<label for="message">Message</label>
 					<textarea name="message" id="message" cols="30" rows="10"></textarea>
 					<input type="submit" value="Envoyer"/>
 				</form>
@@ -177,13 +183,13 @@
 		"image": "https://www.ninacarducci.fr/assets/images/nina.webp",
 		"@id": "https://www.ninacarducci.fr",
 		"url": "https://www.ninacarducci.fr",
-		"telephone": "+33 6 12 34 56 78",
+		"telephone": "+33 5 56 67 78 89",
 		"address": {
 			"@type": "PostalAddress",
-			"streetAddress": "12 rue des Lilas",
+			"streetAddress": "68 avenue Alsace-Lorraine",
 			"addressLocality": "Bordeaux",
 			"addressRegion": "Nouvelle-Aquitaine",
-			"postalCode": "33000",
+			"postalCode": "33200",
 			"addressCountry": "FR"
 		},
 		"geo": {
@@ -191,7 +197,7 @@
 			"latitude": 44.8378,
 			"longitude": -0.5792
 		},
-		"openingHours": "Mo-Fr 09:00-18:00",
+		"openingHours": "Mo-Fr 10:00-19:00",
 		"sameAs": [
 			"https://www.instagram.com/ninacarducci.photo/"
 		]
