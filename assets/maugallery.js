@@ -153,7 +153,6 @@
           index = i ;
         }
       });
-      //Modif pour passer a l'image précédante
         index = (index - 1 + imagesCollection.length) % imagesCollection.length;
         next = imagesCollection[index];
         $(".lightboxImage").attr("src", next.attr("src"));
@@ -192,7 +191,6 @@
           index = i;
         }
       });
-      //Modif pour passer a l'image suivante
       index = (index + 1) % imagesCollection.length;
       next = imagesCollection[index];
       $(".lightboxImage").attr("src", next.attr("src"));
@@ -241,7 +239,6 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      //Modif pour la couleur autour des filtres
       $(".active-tag").removeClass("active active-tag");
       $(this).addClass("active active-tag");
 
